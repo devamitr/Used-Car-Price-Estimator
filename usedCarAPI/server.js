@@ -2,6 +2,9 @@ var express = require('express');
 var app = express();
 var bodyparser = require('body-parser');
 var mongoose = require('mongoose');
+var cors = require('cors');
+
+app.use(cors());
 
 //connect to database
 var db = mongoose.connect('mongodb://localhost/used_car_data');
@@ -103,5 +106,5 @@ app.post('/getexpectedprice', function (req, res) {
 });
 
 app.listen(3000, function () {
-    console.log("user car api server running on port 3000.....");
+    console.log("user car api server running on port 3000 after patch.....");
 });
