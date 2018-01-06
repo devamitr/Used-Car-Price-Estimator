@@ -60,7 +60,7 @@ app.get('/loadddl', function (req, res) {
 app.post('/getmodels', function (req, res) {
     var brand = req.body.brand;
     //res.send("brand recieved : " + brand);
-    Autos.find({
+    Autos.distinct('model',{
         'brand': brand
     }, function (err, cars) {
         if (err) {
