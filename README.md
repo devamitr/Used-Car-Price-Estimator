@@ -10,3 +10,5 @@ The technologies used are:
 along with these necessary libraries were use.
 
 In order to set this project up on your local machine you will need complete react.js tooling, npm, node.js and mongoDB setup.
+
+data source: https://www.kaggle.com/orgesleka/used-cars-database
